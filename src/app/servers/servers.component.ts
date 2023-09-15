@@ -10,6 +10,11 @@ export class ServersComponent implements OnInit {
   serverCreationStatus = 'No server was created';
   serverName = 'Tests';
   username = '';
+  serverCreated = false;
+  servers = ['server1', 'server2'];
+  click = 0;
+  clicks = [];
+  showHidden = false;
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
@@ -17,7 +22,9 @@ export class ServersComponent implements OnInit {
   }
   ngOnInit() {}
   onCreateServer() {
+    this.serverCreated = true;
     this.serverCreationStatus = 'Server was created';
+    this.servers.push(this.serverName);
   }
   onUpdateServerName(event: any) {
     console.log(event);
@@ -26,4 +33,11 @@ export class ServersComponent implements OnInit {
   clearInput() {
     this.username = '';
   }
+  increment() {
+    this.click += 1;
+    console.log(this.click);
+    this.clicks.push(this.click);
+    return this.clicks;
+  }
+  // getUniqueStyle() {}
 }
