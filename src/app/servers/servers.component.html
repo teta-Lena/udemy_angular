@@ -9,14 +9,23 @@
 </button> -->
 
 <label for=""> Server name </label>
-<input
+<!-- <input
   type="text"
   name=""
   id=""
   (input)="onUpdateServerName($event)"
   class="form-control"
-/>
+/> -->
+
+<input type="text" name="" id="" [(ngModel)]="serverName" />
 <p>{{ serverName }}</p>
-<button></button>
+<button>Submit</button>
+
+//assignment
+
+<h3>Assignment</h3>
+<input type="text" name="" id="" [(ngModel)]="username" />
+<p>{{ username }}</p>
+<button [disabled]="username === ''" (click)="clearInput()">Click me</button>
 <app-server></app-server>
 <app-server></app-server>
