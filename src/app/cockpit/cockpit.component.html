@@ -5,14 +5,19 @@
       <label>Server Name</label>
       <!-- #serverNameInput -->
       <!-- use this on inputs and thejn use the  name:type(HTMLInputElement) to be able to extract the value in the component -->
-      <input type="text" class="form-control" [(ngModel)]="newServerName" />
+      <!-- <input type="text" class="form-control" [(ngModel)]="newServerName" />
+       -->
+      <input type="text" class="form-control" #serverNameInput />
+
       <label>Server Content</label>
-      <input type="text" class="form-control" [(ngModel)]="newServerContent" />
+      <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent" /> -->
+      <input type="text" class="form-control" #serverContentInput />
+
       <br />
-      <button class="btn btn-primary" (click)="onAddServer()">
+      <button class="btn btn-primary" (click)="onAddServer(serverNameInput)">
         Add Server
       </button>
-      <button class="btn btn-primary" (click)="onAddBlueprint()">
+      <button class="btn btn-primary" (click)="onAddBlueprint(serverNameInput)">
         Add Server Blueprint
       </button>
     </div>
