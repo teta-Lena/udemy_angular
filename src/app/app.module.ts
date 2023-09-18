@@ -6,6 +6,9 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { btComponent } from './binding-tutorials/binding-tutorials.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +17,9 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
     ServersComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
+    btComponent,
+    CockpitComponent,
+    ServerElementComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

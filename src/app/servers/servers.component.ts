@@ -35,8 +35,9 @@ export class ServersComponent implements OnInit {
   }
   increment() {
     this.click += 1;
-    console.log(this.click);
-    this.clicks.push(this.click);
+    // console.log(this.click);
+    // this.clicks.push(this.click);
+    this.clicks.push(new Date());
     return this.clicks;
   }
   // getUniqueStyle() {}

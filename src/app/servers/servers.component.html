@@ -40,10 +40,18 @@
 
 <p *ngIf="showHidden">My name is T.Lena</p>
 
-<p
+<!-- <p
   *ngFor="let click of clicks"
   [ngStyle]="{ backgroundColor: click >= 5 ? 'blue' : 'transparent' }"
   [ngClass]="{ fiveandabove: click >= 5 }"
+>
+  {{ click }}
+</p> -->
+
+<p
+  *ngFor="let click of clicks; let i = index"
+  [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+  [ngClass]="{ fiveandabove: i >= 4 }"
 >
   {{ click }}
 </p>
