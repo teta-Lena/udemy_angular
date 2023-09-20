@@ -9,6 +9,9 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { btComponent } from './binding-tutorials/binding-tutorials.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { GameControlComponent } from './app/assignment/game-control/game-control.component';
+import { OddComponent } from './assingment/odd/odd.component';
+import { EvenComponent } from './assignment/even/even.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { ServerElementComponent } from './server-element/server-element.componen
     btComponent,
     CockpitComponent,
     ServerElementComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
