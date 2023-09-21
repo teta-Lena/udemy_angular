@@ -13,6 +13,7 @@ import { ServerElementComponent } from './server-element/server-element.componen
 import { EvenComponent } from './assignment/even/even.component';
 import { GameControlComponent } from './assignment/game-control/game-control.component';
 import { OddComponent } from './assignment/odd/odd.component';
+import { SampleComponent } from './ddfordirectives/sample/sample.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { OddComponent } from './assignment/odd/odd.component';
     OddComponent,
     EvenComponent,
     OddComponent,
+    SampleComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
