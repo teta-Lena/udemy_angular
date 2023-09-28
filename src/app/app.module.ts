@@ -15,6 +15,7 @@ import { GameControlComponent } from './assignment/game-control/game-control.com
 import { OddComponent } from './assignment/odd/odd.component';
 import { SampleComponent } from './ddfordirectives/sample/sample.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './ddfordirective/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { BasicHighlightDirective } from './basic-highlight/basic-highlight.direc
     OddComponent,
     SampleComponent,
     BasicHighlightDirective,
+    BetterHighlightDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
