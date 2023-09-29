@@ -38,5 +38,8 @@
     </div>
   </div>
   <p appBasicHighlight>Style me as basic directive</p>
-  <p appBetterHighlight>Style me with a better directive!</p>
+  <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'">
+    <!-- if you want to do property binding for strings specifically u can remove square brackets and the single quotation marks -->
+    Style me with a better directive!
+  </p>
 </div>
