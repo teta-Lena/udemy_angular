@@ -73,4 +73,10 @@
       </li>
     </div>
   </ng-template> -->
+
+  <div [ngSwitch]="value">
+    <p *ngSwitchCase="6">False</p>
+    <p *ngSwitchCase="13">True</p>
+    <p *ngSwitchDefault>Default</p>
+  </div>
 </div>

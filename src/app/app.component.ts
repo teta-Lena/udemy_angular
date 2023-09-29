@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   oddNumbers: number[] = [];
+
   evenNumbers: number[] = [];
 
   onIntervalFired(firedNumber: number) {
