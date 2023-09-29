@@ -42,4 +42,21 @@
     <!-- if you want to do property binding for strings specifically u can remove square brackets and the single quotation marks -->
     Style me with a better directive!
   </p>
+
+  <!-- alternative structural directive -->
+
+  <!-- <ng-template [ngIf]="!onlyOdd">
+    <div>
+      <li
+        class="list-group-item"
+        *ngFor="let even of evenNumbers"
+        [ngClass]="{ odd: even % 2 != 0 }"
+        [ngStyle]="{
+          backgroundColor: even % 2 !== 0 ? 'yellow' : 'transparent'
+        }"
+      >
+        {{ even }}
+      </li>
+    </div>
+  </ng-template> -->
 </div>
