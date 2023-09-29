@@ -16,6 +16,7 @@ import { OddComponent } from './assignment/odd/odd.component';
 import { SampleComponent } from './ddfordirectives/sample/sample.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './ddfordirective/better-highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { BetterHighlightDirective } from './ddfordirective/better-highlight.dire
     SampleComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
+    UnlessDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
